@@ -1,0 +1,40 @@
+# Dependencies
+node_modules/
+.npm
+.venv/
+venv/
+env/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Build
+dist/
+build/
+.next/
+out/
+
+# Local Databases & Logs
+*.log
+*.sqlite3
+db.sqlite3
+.db.sqlite3
+
+# Environment & Secrets
+.env
+.env.local
+.env.production
+.env.development
+.DS_Store
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Project Specific
+.antigravity/
+.gemini/
+/tmp/
