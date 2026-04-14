@@ -26,6 +26,16 @@ React (Vite)       FastAPI               PostgreSQL (Docker)
 
 ## Quick Start
 
+### ⚡ One-Line Presentation Start
+If you are presenting and want to start everything (DB, Backend, Seed, Frontend) in a single command, run this in your VS Code terminal (Project Root):
+
+**PowerShell / VS Code terminal:**
+```powershell
+docker compose up -d; docker compose exec backend python -m app.seed; cd frontend; npm run dev
+```
+
+---
+
 ### Prerequisites
 - [Docker Desktop](https://www.docker.com/products/docker-desktop/) (running)
 - [Node.js 18+](https://nodejs.org/) (for the frontend)

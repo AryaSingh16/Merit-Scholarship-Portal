@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import { useAuth } from '../context/AuthContext'
 import { GraduationCap, Mail, Lock, Eye, EyeOff, AlertCircle } from 'lucide-react'
 import toast from 'react-hot-toast'
+import logo from '../assets/logo.png'
 
 export default function LoginPage() {
   const { login, isAuthenticated } = useAuth()
@@ -34,25 +35,14 @@ export default function LoginPage() {
     <div className="min-h-screen flex" style={{ background: '#f8fafc' }}>
       {/* Sidebar / Illustration Panel */}
       <div className="hidden lg:flex w-[450px] flex-col justify-center items-center px-12 text-white shadow-2xl z-10" style={{ background: 'linear-gradient(135deg, #e37412 0%, #c2410c 100%)' }}>
-        <div className="w-40 h-40 rounded-3xl bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center mb-10 shadow-2xl animate-pulse">
-           <span className="text-white/40 font-bold text-sm tracking-widest uppercase">LOGO</span>
+        <div className="w-40 h-40 rounded-3xl bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center mb-10 shadow-2xl overflow-hidden p-6 hover:scale-105 transition-transform duration-500">
+           <img src={logo} alt="Manipal Logo" className="w-full h-full object-contain" />
         </div>
         <h1 className="text-4xl font-black mb-4 text-center leading-tight tracking-tight">
           Manipal<br/>Scholarship Portal
         </h1>
         <div className="w-16 h-1.5 bg-white/30 rounded-full mb-12"></div>
         
-        <div className="grid grid-cols-2 gap-4 w-full">
-          {[
-            ['10k+', 'Students'],
-            ['₹5Cr+', 'Disbursed'],
-          ].map(([v, l]) => (
-            <div key={l} className="bg-white/5 rounded-2xl p-5 border border-white/10 backdrop-blur-sm text-center">
-              <p className="text-2xl font-black text-white">{v}</p>
-              <p className="text-orange-100/60 text-xs font-bold uppercase tracking-widest mt-1">{l}</p>
-            </div>
-          ))}
-        </div>
       </div>
 
       {/* Login Form Panel */}

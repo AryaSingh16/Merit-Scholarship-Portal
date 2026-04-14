@@ -9,6 +9,7 @@ import {
   ShieldAlert
 } from 'lucide-react'
 import { useAuth } from '../context/AuthContext'
+import logo from '../assets/logo.png'
 
 export default function Sidebar() {
   const { isAdmin, role, userName, studentId, logout } = useAuth()
@@ -18,8 +19,8 @@ export default function Sidebar() {
       {/* Brand Section */}
       <div className="p-7 mb-4">
         <div className="flex items-center gap-3 mb-6">
-          <div className="w-10 h-10 rounded-xl bg-white flex items-center justify-center shadow-lg">
-            <GraduationCap size={22} className="text-[#e37412]" />
+          <div className="w-10 h-10 rounded-xl bg-white flex items-center justify-center shadow-lg overflow-hidden p-1.5">
+            <img src={logo} alt="Logo" className="w-full h-full object-contain" />
           </div>
           <div>
             <h2 className="text-white font-black text-sm tracking-tight leading-none uppercase text-left">Manipal</h2>
