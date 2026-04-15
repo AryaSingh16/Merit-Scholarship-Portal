@@ -378,4 +378,4 @@ CREATE TABLE applications (
 *   **PDF Generation**: Auto-generating scholarship certificates using backend libraries.
 
 ---
-*Created by Antigravity AI for DBMS Technical Documentation.*
+
